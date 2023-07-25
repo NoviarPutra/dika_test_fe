@@ -1,17 +1,17 @@
 import React from "react";
+import { RegisterForm } from "../../components/atoms";
 import { Container } from "react-bootstrap";
-import { LoginForm } from "../../components/atoms";
 
-const Landing = () => {
+const Register = () => {
   return (
     <React.Fragment>
       <Container>
         <div className='d-flex justify-content-center align-items-center vh-100'>
-          <LoginForm />
+          <RegisterForm />
         </div>
       </Container>
     </React.Fragment>
   );
 };
 
-export default Landing;
+export default Register;

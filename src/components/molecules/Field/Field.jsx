@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-const Field = ({ placeholder, type, size, onChange }) => {
+const Field = ({ placeholder, type, size, onChange, value }) => {
   return (
     <React.Fragment>
       <Form.Control
@@ -9,6 +9,7 @@ const Field = ({ placeholder, type, size, onChange }) => {
         size={size || "sm"}
         type={type || "text"}
         placeholder={placeholder}
+        value={value}
         onChange={onChange}
         autoComplete='off'
       />
